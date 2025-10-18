@@ -14,7 +14,7 @@ const Header = () => {
             <div className="header_container">
                 {/*Logo*/}
                 <div className="header_logo">
-                    <h2>React App</h2>
+                    <h2>Zacapoaxtla</h2>
                 </div>
 
                 {/*Menu Desktop */}

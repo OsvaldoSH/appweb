@@ -4,14 +4,16 @@
     --gold-light: #f7ef8a;
     --gold-dark: #b8860b;
     --bg-dark: #1a1a1a;
+    --bg-light: #ffffff;
     --text-light: #ffffff;
     --text-dark: #333333;
 }
 
 /* Header principal*/
 .header{
-    background-color: var(--bg-dark);
-    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+    background: linear-gradient(to bottom, var(--gold-primary) 0%, 
+    #f7ef8a 30%, #fff8dc 70%, #ffffff 100%);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,10 +32,11 @@
 
 /* Logo*/
 .header_logo h2 {
-    color: var(--gold-primary);
+    color: var(--text-da);
     margin: 0;
     font-size: 1.5rem;
     font-weight: bold;
+    text-shadow: 1px, 1px, 2px, rgba(255, 255, 255, 0.8);
 }
 
 /* Menu Desktop*/
@@ -43,9 +46,9 @@
 }
 
 .nav_link {
-    color: var(--text-light);
+    color: var(--text-dark);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -53,7 +56,8 @@
 
 .nav_link:hover {
     color: var(--gold-light);
-    background-color: rgba(212, 175, 55, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Boton Hamburguesa*/
@@ -80,7 +84,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
     flex-direction: column;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);

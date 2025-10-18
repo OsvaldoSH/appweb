@@ -1,12 +1,16 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
-
     const [ isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () =>{
         setIsMenuOpen(!isMenuOpen);
+    }
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
     }
 
     return (
@@ -14,13 +18,15 @@ const Header = () => {
             <div className="header_container">
                 {/*Logo*/}
                 <div className="header_logo">
+                    <Link to="/" style={{ textDecoration: 'none', color: 'inherit'}}>
                     <h2>Zacapoaxtla</h2>
+                    </Link>
                 </div>
 
                 {/*Menu Desktop */}
                 <nav className="header_nav desktop-menu">
-                    <a href="#inicio" className="nav_link">Home</a>
-                    <a href="#control-vacio" className="nav_link">Control de Vacio</a>
+                    <Link to="/" className="nav_link" onClick={closeMenu}>Home</Link>
+                    <Link to="/control-vacio" className="nav_link" onClick={closeMenu}>Control de vacio</Link>
                 </nav>
 
                 { /* Boton Hamburguesa*/}
@@ -32,8 +38,8 @@ const Header = () => {
 
                 { /* Menu Movil*/}
                 <nav className={`header_nav mobile-menu ${isMenuOpen ? 'mobile-menu--open' : ''}`}>
-                    <a href="#inicio" className="nav_link" onClick={() => setIsMenuOpen(false)}>Home</a>
-                    <a href="control-vacio" className="nav_link" onClick={() => setIsMenuOpen(false)}>Control de Vacio</a>
+                    <Link to="/" className="nav_link" onClick={closeMenu}>Home</Link>
+                    <Link to="/control-vacio" className="nav_link" onClick={closeMenu}>Control de vacio</Link>
                 </nav>
             </div>
         </header>    

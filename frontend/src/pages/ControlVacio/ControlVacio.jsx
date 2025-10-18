@@ -1,5 +1,5 @@
 import React from "react";
-import './ControVacio.css';
+import './ControlVacio.css';
 
 const ControlVacio = () => {
     return (

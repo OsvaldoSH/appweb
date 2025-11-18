@@ -91,7 +91,7 @@ app.get('/api/empleados/comodatos', (req, res) => {
             e.id,
             e.nombre,
             e.apellido,
-            e.puesto_id,
+            e.puesto_id
         FROM empleado e
         WHERE e.estado = 'activo'
         ORDER BY e.nombre

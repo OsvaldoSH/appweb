@@ -1,4 +1,3 @@
-import { Await } from 'react-router-dom';
 import { api } from './apiConfig';
 
 export const contratosService = {

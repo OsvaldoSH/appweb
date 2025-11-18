@@ -3,7 +3,8 @@ const mysql = require('mysql2');
 // Configurar conexion
 
 const connection = mysql.createConnection({
-    host: '192.168.1.111',
+    //host: '192.168.1.111' raspberry
+    host: 'localhost',
     user: 'osvaldo',
     password: 'osv',
     database: 'corona',

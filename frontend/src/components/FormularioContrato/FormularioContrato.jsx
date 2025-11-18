@@ -67,7 +67,7 @@ const FormularioContrato = ({ onGuardar, onCancelar }) => {
         setFormData(prev => ({...prev, clave_sive: nuevaClave}));
 
 
-        if (nuevaClave.length >= 2) {
+        if (nuevaClave.length >= 3) {
             setCargando(true);
             try {
                 const clienteData = await contratosService.getClienteByClaveSive(nuevaClave);
@@ -101,7 +101,7 @@ const FormularioContrato = ({ onGuardar, onCancelar }) => {
     const handleNumeroSerieChange = async (serie) => {
         setFormData(prev => ({...prev, numero_serie: serie}));
 
-        if (serie.length >= 3 ){
+        if (serie.length >= 7 ){
             setCargando(true);
             try {
                 const enfriadorData = await contratosService.getEnfriadorBySerie(serie);

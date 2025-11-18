@@ -12,7 +12,7 @@ export const contratosService = {
 
     async getClienteByClaveSive(clave) {
         try {
-            const response = await api.get(`/cliente/clave/${clave}`);
+            const response = await api.get(`/clientes/clave/${clave}`);
             return response.data;
         } catch (error) {
             if (error.response?.status === 404) {
@@ -24,7 +24,7 @@ export const contratosService = {
 
     async getEnfriadorBySerie(numeroSerie) {
         try {
-            const response = await api.post(`/enfriadores/serie/${numeroSerie}`);
+            const response = await api.get(`/enfriadores/serie/${numeroSerie}`);
             return response.data;
         } catch (error) {
             if (error.response?.status === 404) {

@@ -27,8 +27,9 @@ const Header = () => {
                 <nav className="header_nav desktop-menu">
                     <Link to="/" className="nav_link" onClick={closeMenu}>Home</Link>
                     <Link to="/empleados" className="nav_link" onClick={closeMenu}>Empleados</Link>
-                    <Link to="/control-vacio" className="nav_link" onClick={closeMenu}>Control de vacio</Link>
+                    {/*<Link to="/control-vacio" className="nav_link" onClick={closeMenu}>Control de vacio</Link>*/}
                     <Link to="/comodatos" className="nav_link" onClick={closeMenu}>Comodatos</Link>
+                    <Link to="/envases" className="nav_link" onClick={closeMenu}>Vacio</Link>
                 </nav>
 
                 { /* Boton Hamburguesa*/}
@@ -42,8 +43,9 @@ const Header = () => {
                 <nav className={`header_nav mobile-menu ${isMenuOpen ? 'mobile-menu--open' : ''}`}>
                     <Link to="/" className="nav_link" onClick={closeMenu}>Home</Link>
                     <Link to="/empleados" className="nav_link" onClick={closeMenu}>Empleados</Link>
-                    <Link to="/control-vacio" className="nav_link" onClick={closeMenu}>Control de vacio</Link>
+                {/*<Link to="/control-vacio" className="nav_link" onClick={closeMenu}>Control de vacio</Link>*/}
                     <Link to="/comodatos" className="nav_link" onClick={closeMenu}>Comodatos</Link>
+                    <Link to="/envases" className="nav_link" onClick={closeMenu}>Vacio</Link>
                 </nav>
             </div>
         </header>    

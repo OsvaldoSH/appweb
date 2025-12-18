@@ -1,0 +1,62 @@
+/* frontend/src/pages/EnvasesVenta/EnvasesVenta.css */
+.envases-venta {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.envases-venta h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.filtro-fecha {
+  margin-bottom: 20px;
+}
+
+.filtro-fecha label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filtro-fecha input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tarjetas-rutas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tarjeta-ruta {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tarjeta-ruta h3 {
+  margin-top: 0;
+  color: #495057;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 8px;
+}
+
+.btn-agregar {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-agregar:hover {
+  background: #0056b3;
+}
